@@ -236,26 +236,10 @@ For reproduction of all paper tables — including troubleshooting for OOM error
 
 Contributions are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the branch model, code style, and PR checklist. This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
 
-## 📑 Citation
-
-```bibtex
-@techreport{mohammed2026pathmatters,
-  title   = {Path Matters: Learning Optimal Inference-Time Trajectories
-             for Robotic 2D→3D AI Reconstruction},
-  author  = {Mohammed, Taha and Abouhalawa, Ziad and Balatsiuk, Artem
-             and Louati, Aziz and Lallouche, Haroun},
-  year    = {2026},
-  month   = {April},
-  institution = {TU Berlin IAT / Fraunhofer IPK},
-  supervisor  = {Altenbuchner, Adam},
-}
-```
-
-Or use the [`CITATION.cff`](CITATION.cff) file for automatic citation on GitHub.
 
 ## 🙏 Acknowledgements
 
-Built on [VGGT](https://huggingface.co/facebook/VGGT-1B) (Meta AI), [BUFFER-X](https://github.com/BufferX), [Open3D](https://www.open3d.org/), and [NVIDIA Isaac Sim / Isaac Lab](https://isaac-sim.github.io/IsaacLab). Conducted at TU Berlin IAT / Fraunhofer IPK.
+Built on [VGGT](https://huggingface.co/facebook/VGGT-1B) (Meta AI), [BUFFER-X](https://github.com/BufferX), [Open3D](https://www.open3d.org/), and [NVIDIA Isaac Sim / Isaac Lab](https://isaac-sim.github.io/IsaacLab). Conducted at TU Berlin IAT.
 
 ## ⚖️ License
 
