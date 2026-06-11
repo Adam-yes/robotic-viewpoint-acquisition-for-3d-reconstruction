@@ -18,7 +18,7 @@
 [Installation](#-installation) ·
 [Quick Start](#-quick-start) ·
 [Documentation](#-documentation) ·
-[Citation](#-citation)
+
 
 </div>
 
