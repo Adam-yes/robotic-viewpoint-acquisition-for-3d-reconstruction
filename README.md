@@ -135,8 +135,8 @@ The full methodology is described in [`docs/methodology.md`](docs/methodology.md
 
 ```bash
 # 1. Clone
-git clone https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction.git
-cd path-matters-robotic-3d-reconstruction
+git clone https://github.com/Adam-yes/robotic-viewpoint-acquisition-for-3d-reconstruction.git 
+cd robotic-viewpoint-acquisition-for-3d-reconstruction
 
 # 2. VGGT environment (reconstruction)
 conda env create -f environment_vggt.yml
