@@ -26,7 +26,7 @@
 
 ## 📖 Overview
 
-**Path Matters** investigates how the camera trajectory a robot uses to scan an object affects the quality of AI-based 3D reconstruction. Using a UR5e robot with an eye-in-hand camera in Isaac Sim, the project evaluates **five scanning patterns**, **two camera orientation strategies**, and **three reconstruction models** (VGGT, Fast3R, SAM3D) — and trains a **reinforcement-learning agent** in Isaac Lab that learns to select informative viewpoints autonomously.
+**Robotic Viewpoint Acquisition for 3D-Reconstruction** investigates how the camera trajectory a robot uses to scan an object affects the quality of AI-based 3D reconstruction. Using a UR5e robot with an eye-in-hand camera in Isaac Sim, the project evaluates **five scanning patterns**, **two camera orientation strategies**, and **three reconstruction models** (VGGT, Fast3R, SAM3D) — and trains a **reinforcement-learning agent** in Isaac Lab that learns to select informative viewpoints autonomously.
 
 Two findings stand out: **camera orientation — not trajectory geometry — is the dominant controllable factor** in reconstruction quality, and **proximity shaping rewards are essential for RL convergence**.
 
