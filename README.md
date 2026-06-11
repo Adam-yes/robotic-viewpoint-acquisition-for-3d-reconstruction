@@ -17,7 +17,7 @@
 [Key Results](#-key-results) ·
 [Installation](#-installation) ·
 [Quick Start](#-quick-start) ·
-[Documentation](#-documentation) ·
+[Documentation](#-documentation) 
 
 
 </div>
