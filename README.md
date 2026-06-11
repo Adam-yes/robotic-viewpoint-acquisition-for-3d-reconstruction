@@ -1,6 +1,8 @@
 <div align="center">
 
-# Path Matters
+#  Robotic Viewpoint Acquisition for 3D-Reconstruction
+
+
 
 **Learning Optimal Inference-Time Trajectories for Robotic 2D→3D AI Reconstruction**
 
