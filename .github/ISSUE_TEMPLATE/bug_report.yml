@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a problem with the pipeline, tools, or documentation
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill in as much detail as possible —
+        it makes issues dramatically faster to resolve.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Exact commands or a minimal script that reproduces the problem.
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Full traceback / log output
+      render: text
+  - type: input
+    id: os-gpu
+    attributes:
+      label: OS and GPU model
+      placeholder: "Ubuntu 22.04, RTX A6000"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Conda environment
+      options:
+        - vggt
+        - bufferx_o3d
+        - Isaac Sim bundled Python
+        - other (specify in description)
+    validations:
+      required: true
+  - type: textarea
+    id: conda-list
+    attributes:
+      label: Environment details (`conda list`)
+      render: text

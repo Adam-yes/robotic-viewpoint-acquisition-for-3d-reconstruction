@@ -1,0 +1,36 @@
+# Path Matters — Python dependencies
+# Install inside the appropriate conda environment:
+#   conda activate vggt          → for reconstruction
+#   conda activate bufferx_o3d   → for registration / evaluation
+#
+# Core (both envs)
+numpy>=1.24,<2.0
+scipy>=1.10
+open3d>=0.17
+trimesh>=3.23
+pyyaml>=6.0
+tqdm>=4.66
+
+# VGGT environment
+torch>=2.1
+torchvision>=0.16
+huggingface-hub>=0.20
+Pillow>=10.0
+pycolmap>=0.4
+
+# Registration / evaluation
+# (open3d already covers most Open3D needs)
+# BUFFER-X has its own install script — see scripts/install_*.sh in ~/BUFFER-X
+
+# Notebooks and visualisation
+matplotlib>=3.8
+pandas>=2.0
+jupyter>=1.0
+ipykernel>=6.0
+
+# Testing
+pytest>=7.4
+pytest-cov>=4.1
+
+# Code quality
+flake8>=6.1

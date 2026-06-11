@@ -1,0 +1,77 @@
+# Data (large files, never commit raw data)
+data/raw/
+data/processed/
+data/runs/
+
+# Point clouds and meshes
+*.ply
+*.pcd
+*.stl
+*.obj
+*.glb
+*.gltf
+*.usdc
+*.usda
+*.usd
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# NumPy arrays
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs and results (keep CSV and markdown, ignore large binaries)
+*.log
+runs/
+logs/
+tensorboard/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Conda
+.conda/
+conda-lock.yml
+
+# Credentials / secrets
+.env
+*.pem
+*.key
+secrets/
+
+# Isaac Sim caches
+kit/
+_build/
+_compiler/

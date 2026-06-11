@@ -1,0 +1,28 @@
+name: bufferx_o3d
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cudatoolkit=11.8
+  - pytorch::pytorch=2.1
+  - conda-forge::numpy>=1.24,<2.0
+  - conda-forge::scipy>=1.10
+  - conda-forge::pyyaml>=6.0
+  - conda-forge::tqdm>=4.66
+  - conda-forge::matplotlib>=3.8
+  - conda-forge::pandas>=2.0
+  - conda-forge::jupyter
+  - conda-forge::pytest>=7.4
+  - conda-forge::flake8
+  - pip:
+    - open3d>=0.17
+    - trimesh>=3.23
+
+# After creating this environment, install BUFFER-X:
+#   conda activate bufferx_o3d
+#   cd ~/BUFFER-X
+#   bash scripts/install_py3_10_cuda11_8.sh

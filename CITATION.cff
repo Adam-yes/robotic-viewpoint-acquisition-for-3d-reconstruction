@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Path Matters: Learning Optimal Inference-Time Trajectories for Robotic 2D→3D AI Reconstruction"
+version: 1.0.0
+date-released: "2026-04-14"
+url: "https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction"
+repository-code: "https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction"
+license: MIT
+abstract: >
+  Path Matters investigates how the camera trajectory a robot uses to scan
+  an object affects the quality of AI-based 3D reconstruction.  The project
+  evaluates five scanning patterns, two camera orientation strategies, three
+  reconstruction models (VGGT, Fast3R, SAM3D), and a reinforcement learning
+  agent trained in Isaac Lab to select optimal viewpoints for a UR5e robot
+  with an eye-in-hand camera.  Key findings: camera orientation (not
+  trajectory geometry) is the dominant factor in reconstruction quality, and
+  proximity shaping rewards are essential for RL convergence.
+keywords:
+  - 3D reconstruction
+  - robotic scanning
+  - viewpoint selection
+  - reinforcement learning
+  - VGGT
+  - Isaac Sim
+  - Isaac Lab
+  - UR5e
+  - ICP alignment
+  - point cloud
+authors:
+  - family-names: "Balatsiuk"
+    given-names: "Artem"
+    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    orcid: ""
+  - family-names: "Abouhalawa"
+    given-names: "Ziad"
+    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    orcid: ""
+  - family-names: "Lallouche"
+    given-names: "Haroun"
+    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    orcid: ""
+  - family-names: "Mohammed"
+    given-names: "Taha"
+    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    orcid: ""
+  - family-names: "Louati"
+    given-names: "Aziz"
+    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    orcid: ""
+contact:
+  - family-names: "Altenbuchner"
+    given-names: "Adam"
+    affiliation: "Fraunhofer IPK"
+    github: "Adam-yes"
+references:
+  - type: software
+    title: "VGGT: Visual Geometry Grounded Deep Structure From Motion"
+    authors:
+      - family-names: "Wang"
+        given-names: "Jianyuan"
+    url: "https://huggingface.co/facebook/VGGT-1B"
+  - type: software
+    title: "BUFFER-X: Buffer Extended for Point Cloud Registration"
+    url: "https://github.com/BufferX"
+  - type: software
+    title: "Isaac Lab"
+    authors:
+      - name: "NVIDIA Corporation"
+    version: "0.48"
+    url: "https://isaac-sim.github.io/IsaacLab"

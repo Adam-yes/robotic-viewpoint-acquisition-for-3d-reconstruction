@@ -1,0 +1,132 @@
+# ============================================================
+# Path Matters — Master Pipeline Configuration
+# ============================================================
+# All stages read their defaults from this file.
+# Command-line arguments override individual keys.
+#
+# Environment:
+#   - VGGT reconstruction:  conda activate vggt
+#   - Registration/eval:    conda activate bufferx_o3d
+#
+# Hardware baseline:
+#   GPU:  NVIDIA RTX A6000 (47 GB)
+#   CPU:  Intel Core i9-14900K
+#   RAM:  64 GB
+#   OS:   Ubuntu 22.04 LTS
+# ============================================================
+
+# ============================================================
+# Image Capture  (src/capture/capture_images.py)
+# ============================================================
+capture:
+  num_positions: 54          # Total viewpoints per scan session
+  circle_radius: 0.45        # Camera orbit radius from object centre (m)
+  camera_height_offset: 0.35 # Camera height above object centre (m)
+  focal_length: 24.0         # Isaac Sim camera focal length (mm equivalent)
+  stabilize_frames: 20       # Simulation frames to wait before capture
+  stabilize_sleep: 0.3       # Wall-clock sleep after simulation frames (s)
+
+# ============================================================
+# VGGT Reconstruction  (src/reconstruction/vggt_reconstruct.py)
+# ============================================================
+reconstruction:
+  max_images: 54             # Maximum images fed to VGGT per scene
+  stride: 1                  # Use every Nth image (1 = all)
+  conf_percentile: 70.0      # Confidence percentile threshold for point filtering
+  max_points: 800000         # Subsample to this many points after filtering
+
+# ============================================================
+# VGGT + ICP full pipeline  (src/reconstruction/vggt_icp_pipeline.py)
+# ============================================================
+vggt:
+  confidence_threshold: 4.0  # Per-pixel confidence minimum (best-found: 4.0)
+  seed: 42
+  max_images: 54
+
+preprocessing:
+  # Scene cloud cleanup
+  scene_downsample_voxel: 0.001
+  scene_outlier_neighbors: 50
+  scene_outlier_std_ratio: 5.0
+  plane_distance_threshold: 0.015
+  plane_offset: -0.015
+  no_plane_removal: true     # Best result with plane removal disabled
+
+  # Reference object cleanup
+  object_downsample_voxel: 0.01
+
+ransac:
+  tries: 20
+  downsample_voxel: 0.01
+  max_correspondence_distance: 0.1
+  normal_radius: 5.0
+  normal_max_nn: 100
+  fpfh_radius: 5.0
+  fpfh_max_nn: 5
+
+icp:
+  max_correspondence_distance: 0.025
+  max_iterations: 500
+
+adaptive:
+  max_iterations: 50
+  fitness_threshold: 0.95
+  rmse_threshold: 0.005
+  rotation_noise_range: 0.01
+  translation_noise_start: 0.1
+
+scale_refinement:
+  min_factor: 0.5
+  max_factor: 1.5
+  max_iterations: 6
+  convergence_threshold: 0.05
+  icp_max_iterations: 200
+
+# ============================================================
+# Registration / BUFFER-X  (src/registration/bufferx_pipeline.py)
+# ============================================================
+registration:
+  sample_points: 120000
+  max_points: 30000
+  icp_downsample_voxel: 0.0
+  icp_max_correspondence: 0.0
+  # BUFFER-X experiment snapshot (see BUFFER-X/config/)
+  experiment_id: threedmatch
+  bufferx_env: bufferx_o3d
+
+# ============================================================
+# RL Viewpoint Selection  (src/rl/viewpoint_env.py)
+# ============================================================
+rl:
+  coverage_threshold: 0.75     # Episode success threshold
+  max_episode_steps: 200
+  voxel_grid_size: [16, 16, 16]
+  workspace_bounds:
+    x: [-0.6, 0.6]
+    y: [-0.6, 0.6]
+    z: [0.0, 0.8]
+  proximity_sigma: 0.1         # Gaussian shaping width (m) — critical for convergence
+  coverage_reward_scale: 5.0
+  proximity_reward_scale: 1.0
+  success_reward: 10.0
+  collision_penalty: -2.0
+  num_envs: 1
+  device: "cuda:0"
+
+# ============================================================
+# Evaluation / Metrics
+# ============================================================
+evaluation:
+  # Thresholds for ICP quality assessment
+  fitness_excellent: 0.85
+  fitness_good: 0.60
+  # RMSE in metres (lower is better)
+  rmse_target: 0.015
+
+# ============================================================
+# Runtime environment
+# ============================================================
+runtime:
+  pytorch_cuda_alloc_conf: "expandable_segments:True"
+  vggt_conda_env: "vggt"
+  bufferx_conda_env: "bufferx_o3d"
