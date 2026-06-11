@@ -6,10 +6,9 @@
 
 **Learning Optimal Inference-Time Trajectories for Robotic 2D→3D AI Reconstruction**
 
-[![CI](https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction/actions/workflows/ci.yml/badge.svg)](https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction/actions/workflows/ci.yml)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
-[![Submission](https://img.shields.io/badge/submission-14.04.2026-green.svg)](CITATION.cff)
 
 > *Does the path a robot camera takes through a scene affect the quality of a learned 3D reconstruction? Yes — dramatically.*
 
