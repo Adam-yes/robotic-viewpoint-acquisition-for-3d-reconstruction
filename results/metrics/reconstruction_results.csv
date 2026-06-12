@@ -1,18 +1,18 @@
-experiment,model,trajectory,camera_approach,n_objects,fitness_mean,fitness_std,rmse_mean_m,rmse_std_m,density_pts,time_s,notes
-VGGT,VGGT,mixed,Approach2,28,0.93,0.04,0.002,0.001,8200,7,Best overall model
-Fast3R,Fast3R,mixed,Approach2,28,0.89,0.06,0.010,0.003,5600,7,Comparable speed to VGGT
-SAM3D,SAM3D,mixed,Approach2,28,0.91,0.05,0.008,0.002,45000,9,Highest density but slower
-Lawnmower,VGGT,Lawnmower,Approach1,5,0.65,0.07,0.038,0.012,7800,7,Fixed downward camera
-Zigzag,VGGT,Zigzag,Approach1,5,0.67,0.06,0.034,0.010,7900,7,Fixed downward camera
-Hemisphere,VGGT,Hemisphere,Approach1,5,0.70,0.05,0.032,0.009,8100,7,Fixed downward camera
-Spiral,VGGT,Spiral,Approach1,5,0.68,0.07,0.036,0.011,7700,7,Fixed downward camera
-Random,VGGT,Random,Approach1,5,0.71,0.09,0.035,0.013,8000,7,Fixed downward camera
-Lawnmower,VGGT,Lawnmower,Approach2,5,0.76,0.06,0.025,0.008,8200,7,Object-pointing camera
-Zigzag,VGGT,Zigzag,Approach2,5,0.78,0.05,0.023,0.007,8300,7,Object-pointing camera
-Hemisphere,VGGT,Hemisphere,Approach2,5,0.86,0.04,0.015,0.005,8500,7,BEST fixed strategy
-Spiral,VGGT,Spiral,Approach2,5,0.80,0.06,0.021,0.007,8200,7,Object-pointing camera
-Random,VGGT,Random,Approach2,5,0.75,0.08,0.027,0.010,8100,7,Object-pointing camera
-ICP_vs_BUFFERX_ICP,VGGT,mixed,Approach2,28,0.87,0.05,0.012,0.003,8200,7,ICP registration
-ICP_vs_BUFFERX_BUFFERX,VGGT,mixed,Approach2,28,0.81,0.07,0.015,0.004,8200,12,BUFFER-X registration
-RL_exp06_no_shaping,RL,RL_learned,RL_adaptive,10,0.40,0.15,0.042,0.018,7500,35,No proximity shaping — 0.4% success
-RL_exp07_proximity_shaping,RL,RL_learned,RL_adaptive,10,0.81,0.08,0.018,0.006,8100,35,Proximity shaping — 45.2% success
+experiment,model,trajectory,camera_approach,n_objects,fitness_mean,rmse_mean_m,density_pts,time_s,notes
+VGGT,VGGT,mixed,Approach2,28,0.93,0.002,8200,7,Best overall model
+Fast3R,Fast3R,mixed,Approach2,28,0.89,0.01,5600,7,Comparable speed to VGGT
+SAM3D,SAM3D,mixed,Approach2,28,0.91,0.008,45000,9,Highest density but slower
+Lawnmower,VGGT,Lawnmower,Approach1,1,0.71,0.031,7800,7,Fixed downward camera
+Zigzag,VGGT,Zigzag,Approach1,1,0.68,0.034,7900,7,Fixed downward camera
+Hemisphere,VGGT,Hemisphere,Approach1,1,0.74,0.028,8100,7,Fixed downward camera
+Spiral,VGGT,Spiral,Approach1,1,0.66,0.037,7700,7,Fixed downward camera
+Random,VGGT,Random,Approach1,1,0.59,0.044,8000,7,Fixed downward camera
+Lawnmower,VGGT,Lawnmower,Approach2,1,0.81,0.019,8200,7,Object-pointing camera
+Zigzag,VGGT,Zigzag,Approach2,1,0.79,0.022,8300,7,Object-pointing camera
+Hemisphere,VGGT,Hemisphere,Approach2,1,0.86,0.015,8500,7,BEST fixed strategy
+Spiral,VGGT,Spiral,Approach2,1,0.77,0.024,8200,7,Object-pointing camera
+Random,VGGT,Random,Approach2,1,0.71,0.031,8100,7,Object-pointing camera
+ICP_vs_BUFFERX_ICP,VGGT,mixed,Approach2,28,0.87,0.0041,8200,7,ICP registration
+ICP_vs_BUFFERX_BUFFERX,VGGT,mixed,Approach2,28,0.81,0.015,8200,12,BUFFER-X registration
+RL_exp06_no_shaping,RL,RL_learned,RL_adaptive,10,0.4,0.042,7500,35,No proximity shaping — 0.4% success
+RL_exp07_proximity_shaping,RL,RL_learned,RL_adaptive,10,0.81,0.018,8100,35,Proximity shaping — 45.2% success
