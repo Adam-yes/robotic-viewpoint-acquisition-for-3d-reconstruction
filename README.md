@@ -35,7 +35,7 @@ tested scan pattern** in reconstruction quality, and **proximity shaping rewards
 ```mermaid
 flowchart LR
     subgraph Capture
-        A["Isaac Sim 5.1<br/>UR5e eye-in-hand<br/>54 views/object"]
+        A["Isaac Sim 5.1<br/>UR5e eye-in-hand<br/>12 views/object"]
     end
     subgraph Reconstruction
         B["VGGT<br/>2D → 3D point cloud"]
@@ -52,7 +52,7 @@ flowchart LR
     H["BUFFER-X<br/>(optional initialiser)"] -.-> E
 
     subgraph RL["RL Branch — Isaac Lab"]
-        I["PPO training"] --> J["ViewpointEnv"] --> K["Learned optimal viewpoints"]
+        I["PPO training"] --> J["ViewpointEnv"] --> K["Learned coverage-seeking viewpoints"]
     end
     A -.-> RL
 ```
