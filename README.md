@@ -186,7 +186,7 @@ All pipeline parameters live in [`config/pipeline_config.yaml`](config/pipeline_
 ## 📁 Repository Structure
 
 ```
-path-matters-robotic-3d-reconstruction/
+robotic-viewpoint-acquisition-for-3d-reconstruction/
 ├── src/                       Core pipeline code
 │   ├── capture/               Isaac Sim image capture
 │   ├── reconstruction/        VGGT reconstruction + full ICP pipeline
