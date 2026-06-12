@@ -88,7 +88,8 @@ flowchart LR
 | Approach 1 | Camera axis fixed downward | 0.68 | 0.035 |
 | **Approach 2** | **Camera pointing at object** | **0.79** | **0.022** |
 
-**Best fixed strategy:** Hemisphere trajectory + Approach 2 → Fitness = 0.86, RMSE = 0.015 m
+**Best fixed strategy:** Hemisphere trajectory + object-pointing orientation → Fitness 0.86, RMSE 0.015 m (single-object
+trajectory experiment)
 
 ### Registration
 
