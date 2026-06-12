@@ -14,7 +14,7 @@
 
 ## Overview
 
-Path Matters investigates a deceptively simple question: *given a fixed number
+Robotic viewpoint acquisition for 3d-reconstruction investigates a deceptively simple question: *given a fixed number
 of camera viewpoints, does the trajectory through which those views are collected
 affect the quality of a learned 2D→3D reconstruction?*
 
