@@ -122,7 +122,7 @@ initial alignment, making it a useful initialiser for ICP.
 
 ---
 
-## Camera Orientation: The Dominant Factor
+## Camera Orientation: a first-order acquisition factor
 
 The single most surprising finding of the project is that **camera orientation
 is the dominant controllable factor** in reconstruction quality — more
