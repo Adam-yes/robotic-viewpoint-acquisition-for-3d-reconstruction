@@ -71,7 +71,7 @@ flowchart LR
 
 ## 📊 Key Results
 
-### Reconstruction quality — 28 objects (Table 7)
+### Reconstruction quality — 28 objects 
 
 | Model | Fitness ↑ | RMSE (m) ↓ | Density (pts) | Time (s) |
 |-------|-----------|------------|---------------|----------|
@@ -79,7 +79,7 @@ flowchart LR
 | SAM3D | 0.91 | 0.008 | 45 000 | 9 |
 | Fast3R | 0.89 | 0.010 | 5 600 | 7 |
 
-### Camera orientation is the dominant factor (Table 11)
+### Camera orientation is the dominant factor 
 
 | Approach | Strategy | Fitness ↑ | RMSE (m) ↓ |
 |----------|----------|-----------|------------|
