@@ -4,13 +4,14 @@
 
 
 
-**Learning Optimal Inference-Time Trajectories for Robotic 2D→3D AI Reconstruction**
+**Camera-Orientation Effects in Robotic Viewpoint Acquisition for Feed-Forward 3D Reconstruction in
+Manufacturing Inspection Workcells**
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
-> *Does the path a robot camera takes through a scene affect the quality of a learned 3D reconstruction? Yes — dramatically.*
+
 
 [Key Results](#-key-results) ·
 [Installation](#-installation) ·
