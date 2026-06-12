@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Path Matters benchmark dataset consists of 28 household objects rendered
+The benchmark dataset consists of 28 household objects rendered
 in Isaac Sim 5.1 with accompanying ground-truth meshes.
 
 ## Object List
