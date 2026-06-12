@@ -239,7 +239,8 @@ Contributions are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the b
 
 ## 🙏 Acknowledgements
 
-Built on [VGGT](https://huggingface.co/facebook/VGGT-1B) (Meta AI), [BUFFER-X](https://github.com/BufferX), [Open3D](https://www.open3d.org/), and [NVIDIA Isaac Sim / Isaac Lab](https://isaac-sim.github.io/IsaacLab). Conducted at TU Berlin IAT.
+Built on [VGGT](https://huggingface.co/facebook/VGGT-1B) (Meta AI), [BUFFER-X](https://github.com/mit-spark/buffer-x), [Open3D](https://www.open3d.org/), and [NVIDIA Isaac Sim / Isaac Lab](https://isaac-sim.github.io/IsaacLab). Conducted at TU Berlin IAT.
+
 
 ## ⚖️ License
 
