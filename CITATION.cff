@@ -1,11 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "Path Matters: Learning Optimal Inference-Time Trajectories for Robotic 2D→3D AI Reconstruction"
+title: "Code for: Camera-Orientation Effects in Robotic Viewpoint Acquisition for Feed-Forward 3D
+Reconstruction in Manufacturing Inspection Workcells"
 version: 1.0.0
 date-released: "2026-04-14"
-url: "https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction"
-repository-code: "https://github.com/Adam-yes/path-matters-robotic-3d-reconstruction"
+url: "https://github.com/Adam-yes/robotic-viewpoint-acquisition-for-3d-reconstruction"
+repository-code: "https://github.com/Adam-yes/robotic-viewpoint-acquisition-for-3d-reconstruction"
 license: MIT
 abstract: >
   Path Matters investigates how the camera trajectory a robot uses to scan
@@ -28,30 +29,44 @@ keywords:
   - ICP alignment
   - point cloud
 authors:
+  - family-names: "Altenbuchner"
+    given-names: "Adam Michael"
+    affiliation: "TU Berlin IAT"
+    orcid: "0009-0004-3759-2035"
+  - family-names: "Hartisch"
+    given-names: "Richard"
+    affiliation: "TU Berlin IAT"
+    orcid: "0009-0001-6777-5949"
+
   - family-names: "Balatsiuk"
     given-names: "Artem"
-    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     orcid: ""
   - family-names: "Abouhalawa"
     given-names: "Ziad"
-    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     orcid: ""
   - family-names: "Lallouche"
     given-names: "Haroun"
-    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     orcid: ""
   - family-names: "Mohammed"
     given-names: "Taha"
-    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     orcid: ""
   - family-names: "Louati"
     given-names: "Aziz"
-    affiliation: "TU Berlin IAT / Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     orcid: ""
+  - family-names: "Krüger"
+    given-names: "Jörg"
+    affiliation: "TU Berlin IAT"
+    orcid: "0000-0001-5138-0793"
+
 contact:
   - family-names: "Altenbuchner"
     given-names: "Adam"
-    affiliation: "Fraunhofer IPK"
+    affiliation: "TU Berlin IAT"
     github: "Adam-yes"
 references:
   - type: software
@@ -62,7 +77,7 @@ references:
     url: "https://huggingface.co/facebook/VGGT-1B"
   - type: software
     title: "BUFFER-X: Buffer Extended for Point Cloud Registration"
-    url: "https://github.com/BufferX"
+    url: "https://github.com/mit-spark/buffer-x"
   - type: software
     title: "Isaac Lab"
     authors:
