@@ -70,7 +70,7 @@ contact:
     github: "Adam-yes"
 references:
   - type: software
-    title: "VGGT: Visual Geometry Grounded Deep Structure From Motion"
+    title: "VGGT: Visual Geometry Grounded Transformer"
     authors:
       - family-names: "Wang"
         given-names: "Jianyuan"
