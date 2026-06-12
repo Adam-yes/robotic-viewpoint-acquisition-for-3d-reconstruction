@@ -104,7 +104,6 @@ trajectory experiment)
 |------------|--------------|-------------|----------|
 | exp_06 (no proximity shaping) | 0.4% | 22.5 | 20.6% |
 | **exp_07 (proximity shaping)** | **45.2%** | **32.7** | **75%+** |
-| Random baseline | — | — | 20.6% |
 
 Full per-experiment metrics: [`results/metrics/reconstruction_results.csv`](results/metrics/reconstruction_results.csv)
 
